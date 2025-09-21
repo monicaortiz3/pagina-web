@@ -1,27 +1,24 @@
 .body{
-    display: flex;
+    
     background-color: gray;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-top: 20px;
-    margin-bottom: 20px;
+ 
 }
 .main{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     gap: 10px;
-    width: 65%;
-    height: 80vh;
+    max-width: 75%; 
+    margin: 0 auto;
+    
 }
 
 .contenedor{
     font-family: "Krub", sans-serif;
-    font-weight: 600;
+    font-weight: bold;
     font-style: normal;
     border-radius: 4px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .contenedor1{ /* Create end schedule */
@@ -32,20 +29,20 @@
 
     grid-row-start: 1;
     grid-row-end: 3;
+
+    /*Para centrar*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .span-contenedor1{
     color:purple;
 }
 
-.imagen-contenedor1{
-    display: block;
-    height: auto;
-    width: 120px;
-    margin: 0 auto;
-}
-.create{
-    font-size: 30px;
-}
+
+
 .contenedor2{ /* Write your content */
     background-color: hsl(39, 100%, 71%);
     
@@ -54,19 +51,6 @@
 
     grid-row-start: 3;
     grid-row-end: 6;
-}
-
-.write{
-    margin: 0;
-    font-size: 30px;
-}
-
-.imagen-contenedor2{
-    display: block;
-    height: 20vh;
-    width: 120px;
-    padding: 10px;
-    margin: 0 auto;
 }
 
 .contenedor3{ /* Social Media */
@@ -81,22 +65,6 @@
     text-align: center;
     color: aliceblue;
 }
-.span-contenedor3{
-    color: hsl(39, 100%, 71%);
-}
-.imagen-contenedor3{
-    display: block;
-    height: auto;
-    width: 120px;
-    margin: 0 auto;
-}
-.p3{
-    font-size: small;
-    text-align: center;
-}
-.social{
-    font-size: 30px;
-}
 .contenedor4{ /* Manage multiple */
     background-color: hsl(0, 0%, 100%);
 
@@ -106,14 +74,7 @@
     grid-row-start: 2;
     grid-row-end: 4;
 }
-.imagen-contenedor4{
-    display: block;
-    height: auto;
-    width: 150px;
-    margin: 0 auto;
-    padding-right: 15px;
 
-}
 
 .contenedor5{ /* 56% */
     background-color: hsl(0, 0%, 100%);
@@ -129,19 +90,6 @@
     margin: 0;
     
 }
-.faster{
-    font-weight: normal;
-    font-size: 10px;
-    margin: 0;
-
-}
-.imagen-contenedor5{
-    display: block;
-    height: auto;
-    width: 110px;
-    margin: 0 auto;
-    padding-top: 10px;
-}
 
 .contenedor6{ /* Maintan a consistent */
     background-color: hsl(39, 100%, 71%);
@@ -152,11 +100,7 @@
     grid-row-start: 2;
     grid-row-end: 4;
 }
-.imagen-contenedor6{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
+
 
 .contenedor7{ /*Grow followers*/
     background-color: hsl(256, 67%, 59%);
@@ -166,13 +110,6 @@
 
     grid-row-start: 4;
     grid-row-end: 6;
-}
-.imagen-contenedor7{
-    width: 35%;
-}
-.grow{
-    display: flex;
-    align-items: center;
 }
 
 .contenedor8{
@@ -185,8 +122,112 @@
     grid-row-end: 4;
 
 }
-@media(max-width: 600px){
-    main{
-          display: grid;
-    }
+
+/*
+    Estilos de imagenes
+*/
+
+.contenedor-imagen-1{
+
+
 }
+
+.imagen-contenedor1{
+    width: 80%;
+    height: 80%;
+    
+    
+}
+
+.create{
+    font-size: 50px;
+    
+}
+
+
+/* .imagen-contenedor2{
+    width: 50%;
+    height: 15%;
+
+}
+
+.imagen-contenedor3{
+    width: 15%;
+    height: 15%;
+}
+
+.imagen-contenedor4{
+    width: 15%;
+    height: 15%;
+
+}
+
+.imagen-contenedor5{
+}
+
+.imagen-contenedor6{
+   
+}
+
+.imagen-contenedor7{
+    
+}
+
+.imagen-contenedor8{
+    width: 100%;
+    height: 20%;
+    margin-left: 20px;
+}
+
+
+/*
+    Estilos de letras
+    */
+
+.contenedor-imagen-1{
+
+
+}
+.contenedor-imagen-2{
+    
+
+}
+.contenedor-imagen-3{
+    
+
+}
+.contenedor-imagen-4{
+    max-width: 900px;
+}
+.imagen-contenedor4{
+    width: 100%;
+}
+.contenedor-imagen-5{
+    
+
+}
+.contenedor-imagen-6{
+    max-width: 500px;
+}
+
+.imagen-contenedor6{
+    width: 100%;
+}
+
+
+.contenedor-imagen-7{
+    
+
+}
+
+.contenedor-imagen-8{
+
+    max-width: 500px;
+
+}
+
+.imagen-contenedor8{
+    width: 100%;
+}
+
+
